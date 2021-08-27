@@ -35,7 +35,7 @@
 			"path": "pages/info/info",
 			"style": {}
 		}
-	],
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
