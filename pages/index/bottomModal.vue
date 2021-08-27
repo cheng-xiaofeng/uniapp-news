@@ -49,10 +49,10 @@
 </template>
 
 <script>
+	import { mapState, mapActions } from 'vuex'
 	export default {
 		data() {
 			return {
-				showPopup: false,
 				draftNumber: 0,
 				userName: '用户名',
 				tabList: [{
@@ -76,9 +76,17 @@
 				titleB: '参与活动,赢取奖励'
 			}
 		},
+		computed:{
+			...mapState({
+				showPopup: 'showPopup'
+			})
+		},
 		methods: {
+			...mapActions([
+				'togglePopupAction', 
+			]),
 			togglePopup(bool) {
-				this.showPopup = bool
+				this.togglePopupAction({bool})
 			},
 			goto(url) {
 				uni.navigateTo({

@@ -22,15 +22,15 @@
 </template>
 
 <script>
+	import { mapActions } from 'vuex'
 	export default {
 		data() {
 			return {
-				
 				value: '',
 				percent: 0,
 			}
 		},
-		onLoad() {
+		mounted() {
 			this.circleInterval = setInterval(() => {
 				if (this.percent == 100) {
 					this.percent = 0
@@ -39,12 +39,16 @@
 			}, 500)
 		},
 		methods: {
+			...mapActions([
+				'togglePopupAction', 
+				// 将 `this.addCountAction()` 映射为 `this.$store.dispatch('addCountAction')`
+			]),
+			togglePopup(bool) {
+				this.togglePopupAction({bool})
+			},
 			search(e) {
 			
 			},
-			togglePopup(bool) {
-				this.showPopup = bool
-			}
 		}
 	}
 </script>
