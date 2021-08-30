@@ -3,7 +3,7 @@
 		<u-popup v-model="showPopup" mode="bottom" class="popup">
 			<view class="userInfo">
 				<view>
-					<u-avatar :style="{marginRight: '20rpx'}" @tap="goto" src="../../imgs/avatar.jpg" size="51">
+					<u-avatar :style="{marginRight: '20rpx'}" @tap="goto" src="../../../imgs/avatar.jpg" size="51">
 					</u-avatar>
 					<text class="words">{{userName}}</text>
 				</view>
@@ -18,7 +18,7 @@
 			<view class="suggestion">
 				<view class="container">
 					<view class="suggest">
-						<u-image width="32rpx" height="32rpx" src="../../static/bottomModal/crown.png"></u-image>
+						<u-image width="32rpx" height="32rpx" src="../../../static/bottomModal/crown.png"></u-image>
 						<text class="words">加入创作者计划,发布作品赚现金</text>
 						<u-icon name="arrow-right"></u-icon>
 					</view>
@@ -56,19 +56,19 @@
 				draftNumber: 0,
 				userName: '用户名',
 				tabList: [{
-					img: '../../static/bottomModal/message.png',
+					img: '../../../static/bottomModal/message.png',
 					name: '微头条',
 					url: ''
 				}, {
-					img: '../../static/bottomModal/article.png',
+					img: '../../../static/bottomModal/article.png',
 					name: '文章',
 					url: ''
 				}, {
-					img: '../../static/bottomModal/q-a.png',
+					img: '../../../static/bottomModal/q-a.png',
 					name: '问答',
 					url: ''
 				}, {
-					img: '../../static/bottomModal/video.png',
+					img: '../../../static/bottomModal/video.png',
 					name: '拍小视频',
 					url: ''
 				}],

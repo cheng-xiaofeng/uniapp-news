@@ -14,8 +14,8 @@
 		</view>
 	</view>
 </template>
-
 <script>
+	import { mapState, mapActions } from 'vuex'
 	export default {
 		data() {
 			return {
@@ -28,20 +28,17 @@
 			})
 			this.getData()
 		},
+		computed:{
+			mapState(state => {
+				return {
+					news: state.home.news
+				}
+			}),
+		},
 		methods: {
+			...mapActions(['getHomeNewsListAction']),
 			getData(params) {
-				uni.request({
-					url: 'https://unidemo.dcloud.net.cn/api/news',
-					method: 'GET',
-					data: {},
-					params,
-					success: res => {
-						this.news = res.data;
-						uni.hideLoading();
-					},
-					fail: () => {},
-					complete: () => {}
-				});
+				this.getHomeNewsListAction({params})
 			},
 			openinfo(e) {
 				var newsid = e.currentTarget.dataset.newsid;

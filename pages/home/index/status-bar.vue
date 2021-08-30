@@ -4,7 +4,7 @@
 		<view class="left-icon">
 			<u-circle-progress width="70" border-width="6" active-color="#e68f25" :percent="percent">
 				<view class="u-progress-content">
-					<u-image width="51rpx" height="51rpx" src="../../imgs/red-bag.png"></u-image>
+					<u-image width="51rpx" height="51rpx" src="../../../imgs/red-bag.png"></u-image>
 				</view>
 			</u-circle-progress>
 		</view>
