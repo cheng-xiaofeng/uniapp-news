@@ -3,7 +3,7 @@
 		<u-popup v-model="showPopup" mode="bottom" class="popup">
 			<view class="userInfo">
 				<view>
-					<u-avatar :style="{marginRight: '20rpx'}" @tap="goto" src="../../../imgs/avatar.jpg" size="51">
+					<u-avatar :style="{marginRight: '20rpx'}" @tap="goto" src="../../../static/avatar.jpg" size="51">
 					</u-avatar>
 					<text class="words">{{userName}}</text>
 				</view>
