@@ -1,14 +1,16 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+
 import {getHomeNewsList} from '../../utils/request/home.js'
-Vue.use(Vuex); //vue的插件机制
+
 
 //Vuex.Store 构造器选项
-const store = new Vuex.Store({
-	namespace: 'home',
+const home = {
+	namespaced: true,
 	state: { //存放状态
 		showPopup: false,
 		news: []
+	},
+	getters:{
+		
 	},
 	mutations: {
 		getHomeNewsList(state, news) {
@@ -31,5 +33,5 @@ const store = new Vuex.Store({
 			context.commit('togglePopup', payload.bool)
 		}
 	}
-})
-export default store
+}
+export default home

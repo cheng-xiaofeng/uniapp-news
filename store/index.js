@@ -14,6 +14,9 @@ const store = new Vuex.Store({
 	actions: {
 		
 	},
+	getters: {
+		
+	},
 	modules
 })
 export default store

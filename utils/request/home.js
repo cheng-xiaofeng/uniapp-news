@@ -4,10 +4,5 @@ export function getHomeNewsList({params}) {
 		method: 'GET',
 		data: {},
 		params,
-		success: res => {
-			
-		},
-		fail: () => {},
-		complete: () => {}
 	});
 }

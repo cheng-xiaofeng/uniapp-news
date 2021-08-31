@@ -19,7 +19,7 @@
 	export default {
 		data() {
 			return {
-				news: [],
+				
 			}
 		},
 		mounted() {
@@ -29,14 +29,14 @@
 			this.getData()
 		},
 		computed:{
-			mapState(state => {
-				return {
-					news: state.home.news
+			...mapState('home', {
+				news: state => {
+					return state.news
 				}
 			}),
 		},
 		methods: {
-			...mapActions(['getHomeNewsListAction']),
+			...mapActions('home', ['getHomeNewsListAction']),
 			getData(params) {
 				this.getHomeNewsListAction({params})
 			},

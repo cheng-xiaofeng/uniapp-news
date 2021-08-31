@@ -77,12 +77,12 @@
 			}
 		},
 		computed:{
-			...mapState({
+			...mapState('home', {
 				showPopup: 'showPopup'
 			})
 		},
 		methods: {
-			...mapActions([
+			...mapActions('home', [
 				'togglePopupAction', 
 			]),
 			togglePopup(bool) {

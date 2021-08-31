@@ -39,7 +39,7 @@
 			}, 500)
 		},
 		methods: {
-			...mapActions([
+			...mapActions('home', [
 				'togglePopupAction', 
 				// 将 `this.addCountAction()` 映射为 `this.$store.dispatch('addCountAction')`
 			]),

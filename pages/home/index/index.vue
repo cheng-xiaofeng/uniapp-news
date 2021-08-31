@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<status-bar />
-		<majar-content />
+		<!-- <majar-content /> -->
 		<bottom-modal />
 	</view>
 </template>
@@ -15,8 +15,8 @@
 		components: {
 		    bottomModal,
 		    statusBar,
-			majarContent
-		  }
+			// majarContent
+		  },
 	}
 </script>
 

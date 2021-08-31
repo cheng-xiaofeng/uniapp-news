@@ -56,31 +56,31 @@
 		"backgroundColor": "#fff",
 		"position": "bottom",
 		"list": [{
-				"pagePath": "pages/index/index",
+				"pagePath": "pages/home/index/index",
 				"text": "首页",
 				"iconPath": "static/tabBar/home.png",
 				"selectedIconPath": "static/tabBar/home-ed.png"
 			},
 			{
-				"pagePath": "pages/info/info",
+				"pagePath": "pages/video/index/index",
 				"text": "视频",
 				"iconPath": "static/tabBar/play.png",
 				"selectedIconPath": "static/tabBar/play-ed.png"
 			},
 			{
-				"pagePath": "pages/info/info2",
+				"pagePath": "pages/task/index/index",
 				"text": "任务",
 				"iconPath": "static/tabBar/task.png",
 				"selectedIconPath": "static/tabBar/task-ed.png"
 			},
 			{
-				"pagePath": "pages/index/index",
+				"pagePath": "pages/fast-video/index/index",
 				"text": "小视频",
 				"iconPath": "static/tabBar/fire.png",
 				"selectedIconPath": "static/tabBar/fire-ed.png"
 			},
 			{
-				"pagePath": "pages/index/index",
+				"pagePath": "pages/me/index/index",
 				"text": "我的",
 				"iconPath": "static/tabBar/me.png",
 				"selectedIconPath": "static/tabBar/me-ed.png"
