@@ -7,7 +7,7 @@
 			</scroll-view>
 		</view>
 		<view class="content">
-			<swiper class="swiper" >
+			<swiper class="swiper" style="height: 820px;overflow: auto;">
 				<swiper-item>
 					<view class="uni-list">
 						<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,index) in news" :key="index"
@@ -51,9 +51,7 @@
 		},
 		computed: {
 			...mapState('home', {
-				news: state => {
-					return state.news
-				}
+				news: state => state.news
 			}),
 		},
 		methods: {
@@ -81,17 +79,17 @@
 	.content {
 		margin-top: -1px;
 		height: auto;
-		
-		.uni-list {
-			.uni-media-list-body {
-				height: auto;
-				.uni-media-list-text-top {
-					line-height: 1.6em;
+		.swiper {
+			width: 100%;
+			height: auto;
+			.uni-list {
+				.uni-media-list-body {
+					height: auto;
+					.uni-media-list-text-top {
+						line-height: 1.6em;
+					}
 				}
 			}
-			
-			
 		}
-		
 	}
 </style>
