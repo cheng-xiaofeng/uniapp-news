@@ -7,15 +7,16 @@
 </template>
 
 <script>
-	import bottomModal from './bottomModal.vue'
-	import statusBar from './status-bar.vue'
-	import majarContent from './majarContent.vue'
+	import BottomModal from './BottomModal.vue'
+	import StatusBar from './StatusBar.vue'
+	import MajarContent from './MajarContent.vue'
+	
 	
 	export default {
 		components: {
-		    bottomModal,
-		    statusBar,
-			majarContent
+		    BottomModal,
+		    StatusBar,
+			MajarContent,
 		  },
 	}
 </script>

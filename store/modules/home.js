@@ -24,7 +24,8 @@ const home = {
 	},
 	actions: {
 		getHomeNewsListAction(context, payload) {
-			getHomeNewsList(payload).then(res => {
+			getHomeNewsList(payload).then(data => {
+				const [error, res]  = data;
 				context.commit('getHomeNewsList', res.data)
 				uni.hideLoading();
 			})
