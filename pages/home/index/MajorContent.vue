@@ -10,8 +10,8 @@
 			</view>
 		</view>
 		<view class="content">
-			<swiper class="swiper" style="height: 820px;overflow: auto;">
-				<swiper-item>
+			<swiper class="swiper" style="width: 100%;height: 820px;overflow: auto;" :current-item-id="topbarItemId">
+				<swiper-item item-id="u1">
 					<view class="uni-list">
 						<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,index) in news"
 							:key="index" @tap="openinfo" :data-newsid="item.post_id">

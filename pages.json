@@ -35,6 +35,7 @@
 			"path": "pages/home/info/info",
 			"style": {}
 		},
+		// 视频
 		{
 			"path": "pages/video/index/index",
 			"style": {
@@ -43,6 +44,7 @@
 				}
 			}
 		},
+		//我的
 		{
 			"path": "pages/me/index",
 			"style": {
