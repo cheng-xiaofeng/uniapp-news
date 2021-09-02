@@ -48,7 +48,7 @@
 		},
 		data() {
 			return {
-				visible: true,
+				visible: false,
 				customStyle: {
 					border: 'none'
 				},

@@ -4,15 +4,15 @@
 		<view class="left-icon">
 			<u-circle-progress width="70" border-width="6" active-color="#e68f25" :percent="percent">
 				<view class="u-progress-content">
-					<u-image width="51rpx" height="51rpx" src="../../../imgs/red-bag.png"></u-image>
+					<u-image width="51rpx" height="51rpx" src="../../imgs/red-bag.png"></u-image>
 				</view>
 			</u-circle-progress>
 		</view>
-		<view class="search">
-			<u-search placeholder="自动获得焦点" v-model="value" :input-style="{width:'70px'}" :show-action="false"
+		<view class="search" :style="{width: isHome? '75%' : '85%'}">
+			<u-search placeholder="自动获得焦点" v-model="value"  :show-action="false"
 				bg-color="#fff" @search="search" />
 		</view>
-		<view class="right-btn" type="default" @tap="togglePopup(true)">
+		<view v-if="isHome" class="right-btn" type="default" @tap="togglePopup(true)">
 			<view class="circle">
 				<u-icon name="plus" color="#d33d3e" size="12"></u-icon>
 			</view>
@@ -24,6 +24,7 @@
 <script>
 	import { mapActions } from 'vuex'
 	export default {
+		props: ['isHome'],
 		data() {
 			return {
 				value: '',
@@ -63,10 +64,6 @@
 		justify-content: space-around;
 		align-items: center;
 		background-color: #d33d3e;
-	
-		.search {
-			width: 75%;
-		}
 	
 		.left-icon {
 			height: 35px;

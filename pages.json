@@ -34,6 +34,22 @@
 		{
 			"path": "pages/home/info/info",
 			"style": {}
+		},
+		{
+			"path": "pages/video/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
 		}
     ],
 	"globalStyle": {
@@ -80,7 +96,7 @@
 				"selectedIconPath": "static/tabBar/fire-ed.png"
 			},
 			{
-				"pagePath": "pages/me/index/index",
+				"pagePath": "pages/me/index",
 				"text": "我的",
 				"iconPath": "static/tabBar/me.png",
 				"selectedIconPath": "static/tabBar/me-ed.png"

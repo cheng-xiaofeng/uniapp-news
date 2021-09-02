@@ -1,22 +1,22 @@
 <template>
 	<view class="container">
-		<status-bar />
-		<majar-content />
+		<status-bar :isHome="true"/>
+		<major-content />
 		<bottom-modal />
 	</view>
 </template>
 
 <script>
 	import BottomModal from './BottomModal.vue'
-	import StatusBar from './StatusBar.vue'
-	import MajarContent from './MajarContent.vue'
+	import StatusBar from '../../components/StatusBar.vue'
+	import MajorContent from './MajorContent.vue'
 	
 	
 	export default {
 		components: {
 		    BottomModal,
 		    StatusBar,
-			MajarContent,
+			MajorContent,
 		  },
 	}
 </script>
