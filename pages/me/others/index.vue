@@ -1,10 +1,13 @@
 <template>
-	<u-grid :col="4" :border="false">
-		<u-grid-item v-for="item in apps" :key="item.id">
-			<u-image width="51rpx" height="51rpx" :src="item.iconUrl"></u-image>
-			<view class="grid-text">{{item.name}}</view>
-		</u-grid-item>
-	</u-grid>
+	<view class="other-container">
+		<h3>常用</h3>
+		<u-grid :col="4" :border="false">
+			<u-grid-item v-for="item in apps" :key="item.id">
+				<u-image width="51rpx" height="51rpx" :src="item.iconUrl"></u-image>
+				<view class="grid-text">{{item.name}}</view>
+			</u-grid-item>
+		</u-grid>
+	</view>
 </template>
 <script>
 	export default {
@@ -93,7 +96,11 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
+	.other-container {
+		display: block;
+		margin-top: 20px;
+	}
 	.grid-text {
 		margin-top: 10px;
 	}

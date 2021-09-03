@@ -1,15 +1,24 @@
 <template>
 	<view class="container">
 		<me-info />
+		<wallet />
+		<some-tabs />
+		<scroll-img />
 		<other />
 	</view>
 </template>
 <script>
 	import MeInfo from './me-info/index.vue'
+	import Wallet from './wallet/index.vue'
+	import SomeTabs from './some-tabs/index.vue'
+	import ScrollImg from './scroll-img/index.vue'
 	import Other from './others/index.vue'
 	export default {
 		components: {
 			MeInfo,
+			Wallet,
+			SomeTabs,
+			ScrollImg,
 			Other
 		},
 		mounted() {
@@ -20,10 +29,11 @@
 		}
 	}
 </script>
-<style lang="less">
+<style lang="less" scoped>
 	.container {
 		display: block;
-		padding-left: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.grid-text {

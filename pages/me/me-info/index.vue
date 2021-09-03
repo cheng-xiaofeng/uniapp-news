@@ -1,8 +1,8 @@
 <template>
 	<view>
 		<view class="userInfo">
-			<view>
-				<u-avatar :style="{marginRight: '20rpx'}" @tap="goto" src="../../../static/avatar.jpg" size="100">
+			<view @tap="goto('')">
+				<u-avatar :style="{marginRight: '20rpx'}"  src="../../../static/avatar.jpg" size="100">
 				</u-avatar>
 				<h3 class="words">{{userName}}</h3>
 				<u-icon name="arrow-right"  size="28" :custom-style ="{marginLeft: '6px'}"></u-icon>
@@ -17,13 +17,22 @@
 			return {
 				userName: '不玩游戏的程序员'
 			}
+		},
+		methods: {
+			goto(url) {
+				uni.navigateTo({
+					url
+				})
+			}
 		}
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	.userInfo {
 		margin-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
 		h3 {
 			line-height: 55px;
 		}
