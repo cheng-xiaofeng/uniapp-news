@@ -54,7 +54,6 @@
 		data() {
 			return {
 				draftNumber: 0,
-				userName: '用户名',
 				tabList: [{
 					img: '../../../static/bottomModal/message.png',
 					name: '微头条',
@@ -79,7 +78,8 @@
 		computed:{
 			...mapState('home', {
 				showPopup: 'showPopup'
-			})
+			}),
+			...mapState(['userName'])
 		},
 		methods: {
 			...mapActions('home', [

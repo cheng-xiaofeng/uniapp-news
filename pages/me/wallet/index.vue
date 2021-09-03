@@ -9,8 +9,10 @@
 			<view>金币金额<u-icon name="question-circle-fill"></u-icon></view>
 		</view>
 		<view class="get-money">
-			<u-image width="34rpx" height="34rpx" src="../../../imgs/coin.png"></u-image>
-			<text>去领钱</text>
+			<navigator url="navigate/navigate?title=navigate">
+				<u-image width="34rpx" height="34rpx" src="../../../imgs/coin.png"></u-image>
+				<text>去领钱</text>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -40,6 +42,9 @@
 		.get-money {
 			width: 20%;
 			align-items: center;
+			/deep/ uni-navigator{
+				display: flex;
+			}
 		}
 	}
 	

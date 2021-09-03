@@ -12,11 +12,14 @@
 </template>
 
 <script>
+	import { mapState } from 'vuex'
 	export default {
 		data() {
 			return {
-				userName: '不玩游戏的程序员'
 			}
+		},
+		computed: {
+			...mapState(['userName'])
 		},
 		methods: {
 			goto(url) {
