@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="userInfo">
-			<view @tap="goto('')">
+			<view @tap="goto">
 				<u-avatar :style="{marginRight: '20rpx'}"  src="../../../static/avatar.jpg" size="100">
 				</u-avatar>
 				<h3 class="words">{{userName}}</h3>
@@ -24,8 +24,8 @@
 		methods: {
 			goto(url) {
 				uni.navigateTo({
-					url
-				})
+					url: './me-info/detail',
+				});
 			}
 		}
 	}

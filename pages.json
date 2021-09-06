@@ -52,6 +52,12 @@
 					"titleNView": false
 				}
 			}
+		},
+		{
+			"path": "pages/me/me-info/detail",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}
     ],
 	"globalStyle": {

@@ -3,6 +3,7 @@
 		<h3>常用</h3>
 		<u-grid :col="4" :border="false">
 			<u-grid-item v-for="item in apps" :key="item.id">
+				<u-badge :is-dot="true" type="error"></u-badge>
 				<u-image width="51rpx" height="51rpx" :src="item.iconUrl"></u-image>
 				<view class="grid-text">{{item.name}}</view>
 			</u-grid-item>
