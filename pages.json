@@ -56,10 +56,30 @@
 		{
 			"path": "pages/me/me-info/detail",
 			"style": {
-				"navigationStyle": "custom"
+				// "navigationStyle": "custom"
+				"navigationBarTitleText": "",
+				"transparentTitle": "auto",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"backgroundColor": "transparent",
+						"type": "float",
+						"backButton": {
+							"background": "red",
+							"badgeText": "111",
+							"color": "red"
+						},
+						"buttons": [{
+									"color": "#fff",
+									"float": "right",
+									"text": "右"
+								}
+							]
+						}
+					}
 			}
 		}
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
