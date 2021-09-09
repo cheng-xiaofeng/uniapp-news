@@ -64,6 +64,7 @@
 					"titleNView": {
 						"backgroundColor": "transparent",
 						"type": "float",
+						"autoBackButton": "true",
 						"backButton": {
 							"background": "red",
 							"badgeText": "111",
@@ -72,7 +73,7 @@
 						"buttons": [{
 									"color": "#fff",
 									"float": "right",
-									"text": "右"
+									"text": "..."
 								}
 							]
 						}
